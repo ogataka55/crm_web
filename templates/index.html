@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM-Web</title>
+</head>
+<body>
+<h1>顧客一覧</h1>
+<ol>
+    <!-- customers変数を表示 -->
+    {% for customer in customers %}
+    <li>{{ customer[0] }}さん {{ customer[1] }}歳</li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>
